@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shopee_clone/common/bottom_navigation_view.dart';
 
 import 'home/home_page.dart';
 
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
     return const ProviderScope(child: MaterialApp(
       home: Scaffold(
         body: HomePage(),
+        bottomNavigationBar: BottomNavigationView(),
       ),
     ));
   }

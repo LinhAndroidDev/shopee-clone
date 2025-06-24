@@ -18,7 +18,7 @@ class PayHomeView extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Assets.images.icScan.svg(width: 25, height: 25),
+          Assets.images.icScan.svg(width: 23, height: 23),
           const SizedBox(width: 10),
           const DividerVerticalView(),
           const SizedBox(width: 10),
@@ -33,7 +33,7 @@ class PayHomeView extends StatelessWidget {
                       const Expanded(
                         child: Text(
                           'Ví Shopee Pay',
-                          style: TextStyle(fontSize: 14),
+                          style: TextStyle(fontSize: 12),
                           softWrap: true,
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
@@ -43,7 +43,7 @@ class PayHomeView extends StatelessWidget {
                   ),
                   Text(
                     'Liên kết GooglePlay dễ dàng thanh toán',
-                    style: TextStyle(fontSize: 12, color: Colors.grey[600]),
+                    style: TextStyle(fontSize: 10, color: Colors.grey[600]),
                     softWrap: true,
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
@@ -56,6 +56,7 @@ class PayHomeView extends StatelessWidget {
           Flexible(
               flex: 1,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     children: [
@@ -64,7 +65,7 @@ class PayHomeView extends StatelessWidget {
                       const Expanded(
                         child: Text(
                           'Điểm danh',
-                          style: TextStyle(fontSize: 14),
+                          style: TextStyle(fontSize: 12),
                           softWrap: true,
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
@@ -74,7 +75,7 @@ class PayHomeView extends StatelessWidget {
                   ),
                   const Text(
                     'Để nhận Xu!',
-                    style: TextStyle(fontSize: 12, color: ColorName.textRed),
+                    style: TextStyle(fontSize: 10, color: ColorName.orange30, fontWeight: FontWeight.bold),
                     softWrap: true,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -95,7 +96,7 @@ class PayHomeView extends StatelessWidget {
                       const Expanded(
                         child: Text(
                           'SpayLater',
-                          style: TextStyle(fontSize: 12, color: ColorName.textRed),
+                          style: TextStyle(fontSize: 12),
                           softWrap: true,
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
@@ -104,8 +105,8 @@ class PayHomeView extends StatelessWidget {
                     ],
                   ),
                   Text(
-                    'Kích hoạt để nhận  150.000vnđ',
-                    style: TextStyle(fontSize: 12, color: Colors.grey[600]),
+                    'Kích hoạt để nhận 150.000vnđ',
+                    style: TextStyle(fontSize: 10, color: Colors.grey[600]),
                     softWrap: true,
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
@@ -115,7 +116,7 @@ class PayHomeView extends StatelessWidget {
           const SizedBox(width: 10),
           const DividerVerticalView(),
           const SizedBox(width: 10),
-          Assets.images.icCoin.svg(width: 25, height: 25),
+          Assets.images.icCoin.svg(width: 23, height: 23),
         ],
       ),
     );
