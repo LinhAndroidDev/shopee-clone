@@ -3,20 +3,23 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 @RoutePage()
-class LiveStreamPage extends ConsumerStatefulWidget {
-  const LiveStreamPage({super.key});
+class ProfilePage extends ConsumerStatefulWidget {
+  const ProfilePage({super.key});
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() {
-    return _LiveStreamPageState();
+    return _ProfilePageState();
   }
 }
 
-class _LiveStreamPageState extends ConsumerState<LiveStreamPage> {
+class _ProfilePageState extends ConsumerState<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text('Live Stream Page Content'),
+      child: Text(
+        'Profile Page Content',
+        style: TextStyle(fontSize: 24),
+      ),
     );
   }
 }

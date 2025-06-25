@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
@@ -13,6 +14,7 @@ import 'package:shopee_clone/home/widgets/pay_home_view.dart';
 
 import 'models/voucher_model.dart';
 
+@RoutePage()
 class HomePage extends ConsumerStatefulWidget {
   const HomePage({super.key});
 
@@ -20,7 +22,6 @@ class HomePage extends ConsumerStatefulWidget {
   ConsumerState<ConsumerStatefulWidget> createState() {
     return _HomePageState();
   }
-
 }
 
 class _HomePageState extends ConsumerState<HomePage> {

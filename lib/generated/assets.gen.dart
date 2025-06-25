@@ -68,6 +68,10 @@ class $AssetsImagesGen {
   SvgGenImage get icMallFill =>
       const SvgGenImage('assets/images/ic_mall_fill.svg');
 
+  /// File path: assets/images/ic_menu_circle.svg
+  SvgGenImage get icMenuCircle =>
+      const SvgGenImage('assets/images/ic_menu_circle.svg');
+
   /// File path: assets/images/ic_notification.svg
   SvgGenImage get icNotification =>
       const SvgGenImage('assets/images/ic_notification.svg');
@@ -116,6 +120,7 @@ class $AssetsImagesGen {
         icLocation,
         icMall,
         icMallFill,
+        icMenuCircle,
         icNotification,
         icNotificationFill,
         icPersonal,

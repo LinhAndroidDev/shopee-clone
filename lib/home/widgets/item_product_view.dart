@@ -44,7 +44,7 @@ class ItemProductView extends StatelessWidget {
           ),
           const SizedBox(height: 5),
           Row(
-            children: [const SizedBox(width: 10), _buildViewBestSeller(), const SizedBox(width: 3), _buildViewRate()],
+            children: [const SizedBox(width: 10), _buildViewBestSeller(), const SizedBox(width: 3), _buildViewRate(product.rating ?? 0)],
           ),
           const SizedBox(height: 5),
           Row(
@@ -104,24 +104,24 @@ class ItemProductView extends StatelessWidget {
         ));
   }
 
-  Widget _buildViewRate() {
+  Widget _buildViewRate(double rate) {
     return Container(
       decoration: BoxDecoration(
         color: const Color(0xFFFFF9F6),
         border: Border.all(color: Colors.amber, width: 0.5),
       ),
-      child: const Row(
+      child: Row(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SizedBox(width: 2),
-          Icon(Icons.star, color: Colors.amber, size: 14),
-          SizedBox(width: 2),
+          const SizedBox(width: 2),
+          const Icon(Icons.star, color: Colors.amber, size: 14),
+          const SizedBox(width: 2),
           Text(
-            '4.9',
-            style: TextStyle(fontSize: 12, color: Colors.black),
+            rate.toString(),
+            style: const TextStyle(fontSize: 12, color: Colors.black),
           ),
-          SizedBox(width: 4),
+          const SizedBox(width: 4),
         ],
       ),
     );

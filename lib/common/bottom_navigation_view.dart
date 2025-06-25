@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:shopee_clone/generated/assets.gen.dart';
 import 'package:shopee_clone/generated/colors.gen.dart';
 
@@ -72,15 +73,28 @@ class _BottomNavigationViewState extends ConsumerState<BottomNavigationView> {
     BottomNavigationViewItem.profile,
   ];
 
+  static const tabs = [
+    '/home',
+    '/mall',
+    '/live-stream',
+    '/notification',
+    '/profile',
+  ];
+
   @override
   Widget build(BuildContext context) {
     final currentIndex = ref.watch(currentIndexProvider);
     final selectedItem = BottomNavigationViewItem.ofValue(currentIndex);
+    final location = GoRouterState.of(context).uri.toString();
+    int index = tabs.indexWhere((path) => location.startsWith(path));
+    if (index == -1) index = 0;
+
     return BottomNavigationBar(
       type: BottomNavigationBarType.fixed,
       currentIndex: currentIndex,
       onTap: (index) {
         ref.read(currentIndexProvider.notifier).state = index;
+        context.go(tabs[index]);
       },
       items: items
           .map((e) => BottomNavigationBarItem(
