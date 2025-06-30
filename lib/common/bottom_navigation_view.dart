@@ -1,8 +1,10 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shopee_clone/generated/assets.gen.dart';
 import 'package:shopee_clone/generated/colors.gen.dart';
+import 'package:shopee_clone/generated/locale_keys.g.dart';
 
 enum BottomNavigationViewItem {
   home(0),
@@ -40,15 +42,15 @@ enum BottomNavigationViewItem {
   String get label {
     switch (this) {
       case BottomNavigationViewItem.home:
-        return 'Home';
+        return tr(LocaleKeys.common_home);
       case BottomNavigationViewItem.mall:
-        return 'Mall';
+        return tr(LocaleKeys.common_mall);
       case BottomNavigationViewItem.liveStream:
-        return 'Live & Video';
+        return tr(LocaleKeys.common_live_video);
       case BottomNavigationViewItem.notification:
-        return 'Thông báo';
+        return tr(LocaleKeys.common_notification);
       case BottomNavigationViewItem.profile:
-        return 'Tôi';
+        return tr(LocaleKeys.common_personal);
     }
   }
 }

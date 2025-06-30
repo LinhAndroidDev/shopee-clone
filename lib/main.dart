@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -9,8 +10,19 @@ import 'package:shopee_clone/notification/notification_page.dart';
 import 'package:shopee_clone/profile/profile_page.dart';
 import 'routes/app_route.dart';
 
-void main() {
-  runApp(MyApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
+  runApp(
+      EasyLocalization(
+        supportedLocales: const [
+          Locale('en'),
+          Locale('vi', 'VN')
+        ],
+        fallbackLocale: const Locale('en'),
+        path: 'resources/langs',
+        child: MyApp(),
+      ));
 }
 
 final routerProvider = GoRouter(
@@ -62,6 +74,9 @@ class MyApp extends StatelessWidget {
         child: MaterialApp.router(
       title: 'Shopee Clone',
       routerConfig: routerProvider,
+      localizationsDelegates: context.localizationDelegates,
+      supportedLocales: context.supportedLocales,
+      locale: context.locale,
       debugShowCheckedModeBanner: false,
     ));
   }

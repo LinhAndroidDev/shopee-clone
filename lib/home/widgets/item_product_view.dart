@@ -44,7 +44,7 @@ class ItemProductView extends StatelessWidget {
           ),
           const SizedBox(height: 5),
           Row(
-            children: [const SizedBox(width: 10), _buildViewBestSeller(), const SizedBox(width: 3), _buildViewRate(product.rating ?? 0)],
+            children: [const SizedBox(width: 10), _buildViewBestSeller(), const SizedBox(width: 3), _buildViewRate(product.rating)],
           ),
           const SizedBox(height: 5),
           Row(
@@ -104,27 +104,29 @@ class ItemProductView extends StatelessWidget {
         ));
   }
 
-  Widget _buildViewRate(double rate) {
-    return Container(
-      decoration: BoxDecoration(
-        color: const Color(0xFFFFF9F6),
-        border: Border.all(color: Colors.amber, width: 0.5),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          const SizedBox(width: 2),
-          const Icon(Icons.star, color: Colors.amber, size: 14),
-          const SizedBox(width: 2),
-          Text(
-            rate.toString(),
-            style: const TextStyle(fontSize: 12, color: Colors.black),
-          ),
-          const SizedBox(width: 4),
-        ],
-      ),
-    );
+  Widget _buildViewRate(double? rate) {
+    return rate == null
+        ? const SizedBox.shrink()
+        : Container(
+            decoration: BoxDecoration(
+              color: const Color(0xFFFFF9F6),
+              border: Border.all(color: Colors.amber, width: 0.5),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                const SizedBox(width: 2),
+                const Icon(Icons.star, color: Colors.amber, size: 14),
+                const SizedBox(width: 2),
+                Text(
+                  rate.toString(),
+                  style: const TextStyle(fontSize: 12, color: Colors.black),
+                ),
+                const SizedBox(width: 4),
+              ],
+            ),
+          );
   }
 
   Widget _buildViewBestSeller() {

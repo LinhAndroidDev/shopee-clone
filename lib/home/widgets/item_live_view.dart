@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:shopee_clone/generated/colors.gen.dart';
+import 'package:shopee_clone/generated/locale_keys.g.dart';
 
 class ItemLiveView extends StatelessWidget {
   const ItemLiveView({super.key});
@@ -21,7 +23,7 @@ class ItemLiveView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                'Shopee Live Siêu Rẻ'.toUpperCase(),
+                tr(LocaleKeys.home_shopee_live_super_cheap).toUpperCase(),
                 style: const TextStyle(
                   color: ColorName.orange30,
                   fontSize: 14,
@@ -48,12 +50,12 @@ class ItemLiveView extends StatelessWidget {
                           width: double.infinity, height: 110, fit: BoxFit.cover),
                     ),
                     _buildViewLive(),
-                    const Positioned(
+                    Positioned(
                         bottom: 0,
                         left: 5,
                         child: Text(
-                          'Sale siêu tốc',
-                          style: TextStyle(color: Colors.white, fontSize: 10, fontWeight: FontWeight.w500),
+                          tr(LocaleKeys.home_super_sale),
+                          style: const TextStyle(color: Colors.white, fontSize: 10, fontWeight: FontWeight.w500),
                           softWrap: true,
                         ))
                   ],
@@ -65,8 +67,11 @@ class ItemLiveView extends StatelessWidget {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(5),
-                      child: Image.network('https://file.hstatic.net/200000472237/file/livestream-hut-khach-chot-don-ao-ao-2_1ac0fc40af674e74af8cd6b3bb71245f_grande.png',
-                          width: double.infinity, height: 110, fit: BoxFit.cover),
+                      child: Image.network(
+                          'https://file.hstatic.net/200000472237/file/livestream-hut-khach-chot-don-ao-ao-2_1ac0fc40af674e74af8cd6b3bb71245f_grande.png',
+                          width: double.infinity,
+                          height: 110,
+                          fit: BoxFit.cover),
                     ),
                     _buildViewLive(),
                     const Positioned(
@@ -100,16 +105,16 @@ class ItemLiveView extends StatelessWidget {
           end: Alignment.centerRight,
         ),
       ),
-      child: const Row(
+      child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(Icons.circle, color: Colors.white, size: 8),
-          SizedBox(width: 2),
+          const Icon(Icons.circle, color: Colors.white, size: 8),
+          const SizedBox(width: 2),
           Text(
-            'LIVE',
-            style: TextStyle(color: Colors.white, fontSize: 9, fontWeight: FontWeight.bold),
+            tr(LocaleKeys.home_live),
+            style: const TextStyle(color: Colors.white, fontSize: 9, fontWeight: FontWeight.bold),
           ),
         ],
       ),

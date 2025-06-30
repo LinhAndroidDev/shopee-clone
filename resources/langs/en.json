@@ -1,0 +1,23 @@
+{
+  "common": {
+    "home": "home",
+    "mall": "mall",
+    "live_video": "Live & Video",
+    "notification": "Thông báo",
+    "personal": "Tôi"
+  },
+  "home": {
+    "shopee_mall": "Shopee Mall",
+    "shopee_pay_wallet": "Ví Shopee Pay",
+    "googleplay_link_easy_payment": "Liên kết GooglePlay dễ dàng thanh toán",
+    "roll_call": "Điểm danh",
+    "to_get_coins": "Để nhận Xu!",
+    "spay_later": "SpayLater",
+    "activate_to_receive": "Kích hoạt để nhận 150.000vnđ",
+    "shopee_live_super_cheap": "Shopee Live Siêu Rẻ",
+    "super_sale": "Sale siêu tốc",
+    "live": "LIVE",
+    "flash_sale": "Flash Sale",
+    "hot_selling": "Đang bán chạy"
+  }
+}

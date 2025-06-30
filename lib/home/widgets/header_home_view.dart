@@ -1,7 +1,9 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:shopee_clone/generated/assets.gen.dart';
 import 'package:shopee_clone/generated/colors.gen.dart';
+import 'package:shopee_clone/generated/locale_keys.g.dart';
 
 class HeaderHomeView extends StatelessWidget {
   const HeaderHomeView({super.key, this.isHomePage = true});
@@ -44,10 +46,10 @@ class HeaderHomeView extends StatelessWidget {
                               alignment: Alignment.centerLeft,
                               duration: const Duration(milliseconds: 2000)),
                         ], repeatForever: true))
-                      : const Expanded(
+                      : Expanded(
                           child: Text(
-                            'Shopee Mall',
-                            style: TextStyle(color: ColorName.red1C, fontSize: 14, fontWeight: FontWeight.w500),
+                            tr(LocaleKeys.home_shopee_mall),
+                            style: const TextStyle(color: ColorName.red1C, fontSize: 14, fontWeight: FontWeight.w500),
                           ),
                         ),
                   Assets.images.icCamera.svg(width: 24, height: 24),

@@ -1,6 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:shopee_clone/generated/assets.gen.dart';
 import 'package:shopee_clone/generated/colors.gen.dart';
+import 'package:shopee_clone/generated/locale_keys.g.dart';
 
 class ItemFlashSaleView extends StatelessWidget {
   const ItemFlashSaleView({super.key});
@@ -20,7 +21,7 @@ class ItemFlashSaleView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                'Flash Sale'.toUpperCase(),
+                tr(LocaleKeys.home_flash_sale).toUpperCase(),
                 style: const TextStyle(
                   color: ColorName.orange30,
                   fontSize: 14,
@@ -103,7 +104,8 @@ class ItemFlashSaleView extends StatelessWidget {
             color: const Color(0xFFFF6C8A).withOpacity(0.4),
             borderRadius: BorderRadius.circular(25),
           ),
-          child: Text('Đang bán chạy'.toUpperCase(), style: const TextStyle(color: Colors.white, fontSize: 7, fontWeight: FontWeight.bold)),
+          child: Text(tr(LocaleKeys.home_hot_selling).toUpperCase(),
+              style: const TextStyle(color: Colors.white, fontSize: 7, fontWeight: FontWeight.bold)),
         ),
       ],
     );

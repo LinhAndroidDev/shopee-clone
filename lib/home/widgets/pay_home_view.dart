@@ -1,6 +1,8 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:shopee_clone/generated/assets.gen.dart';
 import 'package:shopee_clone/generated/colors.gen.dart';
+import 'package:shopee_clone/generated/locale_keys.g.dart';
 import 'package:shopee_clone/home/widgets/divider_vertical_view.dart';
 
 class PayHomeView extends StatelessWidget {
@@ -30,10 +32,10 @@ class PayHomeView extends StatelessWidget {
                     children: [
                       Assets.images.icWallet.svg(width: 18, height: 18),
                       const SizedBox(width: 5),
-                      const Expanded(
+                      Expanded(
                         child: Text(
-                          'Ví Shopee Pay',
-                          style: TextStyle(fontSize: 12),
+                          tr(LocaleKeys.home_shopee_pay_wallet),
+                          style: const TextStyle(fontSize: 12),
                           softWrap: true,
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
@@ -42,7 +44,7 @@ class PayHomeView extends StatelessWidget {
                     ],
                   ),
                   Text(
-                    'Liên kết GooglePlay dễ dàng thanh toán',
+                    tr(LocaleKeys.home_googleplay_link_easy_payment),
                     style: TextStyle(fontSize: 10, color: Colors.grey[600]),
                     softWrap: true,
                     maxLines: 2,
@@ -62,10 +64,10 @@ class PayHomeView extends StatelessWidget {
                     children: [
                       Assets.images.icCoinGold.svg(width: 18, height: 18),
                       const SizedBox(width: 5),
-                      const Expanded(
+                       Expanded(
                         child: Text(
-                          'Điểm danh',
-                          style: TextStyle(fontSize: 12),
+                          tr(LocaleKeys.home_roll_call),
+                          style: const TextStyle(fontSize: 12),
                           softWrap: true,
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
@@ -73,9 +75,9 @@ class PayHomeView extends StatelessWidget {
                       )
                     ],
                   ),
-                  const Text(
-                    'Để nhận Xu!',
-                    style: TextStyle(fontSize: 10, color: ColorName.orange30, fontWeight: FontWeight.bold),
+                   Text(
+                    tr(LocaleKeys.home_to_get_coins),
+                    style: const TextStyle(fontSize: 10, color: ColorName.orange30, fontWeight: FontWeight.bold),
                     softWrap: true,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -93,10 +95,10 @@ class PayHomeView extends StatelessWidget {
                     children: [
                       Assets.images.icCreditCard.svg(width: 18, height: 18),
                       const SizedBox(width: 5),
-                      const Expanded(
+                      Expanded(
                         child: Text(
-                          'SpayLater',
-                          style: TextStyle(fontSize: 12),
+                          tr(LocaleKeys.home_spay_later),
+                          style: const TextStyle(fontSize: 12),
                           softWrap: true,
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
@@ -105,7 +107,7 @@ class PayHomeView extends StatelessWidget {
                     ],
                   ),
                   Text(
-                    'Kích hoạt để nhận 150.000vnđ',
+                    tr(LocaleKeys.home_activate_to_receive),
                     style: TextStyle(fontSize: 10, color: Colors.grey[600]),
                     softWrap: true,
                     maxLines: 2,
