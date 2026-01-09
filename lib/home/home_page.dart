@@ -41,7 +41,7 @@ class _HomePageState extends ConsumerState<HomePage> {
     ProductModel(detail: 'Bọt cạo râu Gillette Foamy Hương Chanh / Hương Bạc Hà - Chai 50g/175g', imageUrl: 'https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mav6dn6j4zx306_tn.webp', price: 78000, rating: 4.9, quantitySold: 11689, address: 'Bắc Ninh', shippingTime: 'Hôm nay'),
     ProductModel(detail: '[ Combo 10 Túi ] 100 Cái Khẩu Trang 5D 3 Lớp Chống Nắng Chống Bụi Mịn Chống UV', imageUrl: 'https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m4yeqzehm05zfc', price: 12500, rating: 4.7, quantitySold: 3689, shippingTime: 'Hôm nay'),
     ProductModel(detail: 'Khăn Mặt Cotton Khăn Mặt Lông Cừu Siêu Mềm 30x50cm', imageUrl: 'https://down-vn.img.susercontent.com/file/vn-11134201-7r98o-lof8jnhlrppva1_tn.webp', price: 3000, quantitySold: 26307, address: 'Hà nội', shippingTime: '1 - 3 ngày'),
-    ProductModel(detail: 'Bình nước giữ nhiệt 450ml hoạ tiết xương rồng, ly giữ nhiệt lõi thuỷ tinh bọc vỏ nhựa có dây leo', imageUrl: 'https://hoanghoc.vn/wp-content/uploads/2022/04/binh-giu-nhiet-shopee12-1.jpg', price: 4500, rating: 4.6, quantitySold: 11378, address: 'Hà nội', shippingTime: '1 - 3 ngày'),
+    ProductModel(detail: 'Bình nước giữ nhiệt 450ml hoạ tiết xương rồng, ly giữ nhiệt lõi thuỷ tinh bọc vỏ nhựa có dây leo', imageUrl: 'https://down-vn.img.susercontent.com/file/c067daedbc54a99f66daeaaeec25c837', price: 4500, rating: 4.6, quantitySold: 11378, address: 'Hà nội', shippingTime: '1 - 3 ngày'),
     ProductModel(detail: 'Bông Tai Dài Thỏ Nhồi Bông 2 Trong 1 Ráp Trái Cây Cosplay Dâu Và Cà Rốt Món Quà Dễ Thương', imageUrl: 'https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3gg2bi1t130f1', price: 43800, quantitySold: 12167),
     ProductModel(detail: 'Set Trà Sữa Trân Châu Đường Đen EatMe - Set làm Trà Sửa Trân Châu Đường Đen 15 20 Ly', imageUrl: 'https://down-vn.img.susercontent.com/file/sg-11134201-23020-rsv4qfplzbnv87', price: 54300, rating: 4.9, quantitySold: 2000, address: 'Hà nội', shippingTime: 'Ngày Mai'),
   ];
@@ -49,7 +49,7 @@ class _HomePageState extends ConsumerState<HomePage> {
   @override
   Widget build(BuildContext context) {
     return ColoredBox(
-      color: Colors.grey.shade200,
+      color: ColorName.backgroundCommon,
       child: SingleChildScrollView(
         child: Column(
           children: [

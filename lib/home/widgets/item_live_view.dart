@@ -46,7 +46,7 @@ class ItemLiveView extends StatelessWidget {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(5),
-                      child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7BFTvqqnM_J9CrAkGlQTkg0yuzCmkDZO-EA&s',
+                      child: Image.network('https://cdn.tienphong.vn/images/a6bf4f60924201126af6849ca45a3980501bd8ecda1fa56cbce7f23729b61f12a92b34c9aa0fbed03eb362b9e1a11713b4e55c17b810bb24a5010e96910f3ca4/livestream-572.png',
                           width: double.infinity, height: 110, fit: BoxFit.cover),
                     ),
                     _buildViewLive(),

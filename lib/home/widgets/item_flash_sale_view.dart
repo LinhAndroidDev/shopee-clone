@@ -86,7 +86,7 @@ class ItemFlashSaleView extends StatelessWidget {
               BoxDecoration(borderRadius: const BorderRadius.all(Radius.circular(5)), border: Border.all(color: const Color(0xFFFF6C8A), width: 2)),
           child: Stack(
             children: [
-              Image.network('https://trungtamthuoc.com/images/products/dolfenal-500mg-b0461.jpg', width: double.infinity, height: 80),
+              Image.network('https://channel.mediacdn.vn/428462621602512896/2022/9/4/photo-2-1662255472754695121731.jpg', width: double.infinity, height: 80),
               const Positioned(
                   top: 0,
                   right: 0,

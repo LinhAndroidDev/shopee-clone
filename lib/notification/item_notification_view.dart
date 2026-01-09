@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopee_clone/common/widgets/divider_common.dart';
 import 'package:shopee_clone/generated/colors.gen.dart';
 
 class ItemNotificationView extends StatelessWidget {
@@ -54,13 +55,7 @@ class ItemNotificationView extends StatelessWidget {
           ),
         ),
         showDivider
-            ? const Padding(
-                padding: EdgeInsets.only(left: 15),
-                child: ColoredBox(
-                  color: ColorName.grey46,
-                  child: SizedBox(width: double.infinity, height: 0.5),
-                ),
-              )
+            ? const DividerCommon(marginLeft: 15)
             : const SizedBox.shrink(),
       ],
     );

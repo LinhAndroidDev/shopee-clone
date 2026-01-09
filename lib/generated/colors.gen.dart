@@ -13,6 +13,9 @@ import 'package:flutter/material.dart';
 class ColorName {
   ColorName._();
 
+  /// Color: #EEEEEEFF
+  static const Color backgroundCommon = Color(0xEEEEEEFF);
+
   /// Color: #0d8168
   static const Color green68 = Color(0xFF0D8168);
 

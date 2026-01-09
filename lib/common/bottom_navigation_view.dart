@@ -103,8 +103,7 @@ class _BottomNavigationViewState extends ConsumerState<BottomNavigationView> {
                 icon: e.icon(selectedItem).svg(
                       width: 30,
                       height: 30,
-                      colorFilter: ColorFilter.mode(
-                          currentIndex == e.value ? ColorName.orange30 : Colors.black.withOpacity(0.6), BlendMode.srcIn),
+                      colorFilter: ColorFilter.mode(currentIndex == e.value ? ColorName.orange30 : Colors.black.withOpacity(0.6), BlendMode.srcIn),
                     ),
                 label: e.label,
                 tooltip: e.label,

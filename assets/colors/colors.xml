@@ -6,4 +6,5 @@
     <color name="orange_30">#f04d30</color>
     <color name="green_68">#0d8168</color>
     <color name="red_1C">#d0011c</color>
+    <color name="background_common">#EEEEEEFF</color>
 </resources>

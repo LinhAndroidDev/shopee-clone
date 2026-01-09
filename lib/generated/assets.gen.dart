@@ -12,8 +12,18 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart' as _svg;
 import 'package:vector_graphics/vector_graphics.dart' as _vg;
 
+class $ResourcesGen {
+  const $ResourcesGen();
+
+  /// Directory path: resources/langs
+  $ResourcesLangsGen get langs => const $ResourcesLangsGen();
+}
+
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/ic_box.svg
+  SvgGenImage get icBox => const SvgGenImage('assets/images/ic_box.svg');
 
   /// File path: assets/images/ic_camera.svg
   SvgGenImage get icCamera => const SvgGenImage('assets/images/ic_camera.svg');
@@ -61,6 +71,9 @@ class $AssetsImagesGen {
   SvgGenImage get icLocation =>
       const SvgGenImage('assets/images/ic_location.svg');
 
+  /// File path: assets/images/ic_lock.svg
+  SvgGenImage get icLock => const SvgGenImage('assets/images/ic_lock.svg');
+
   /// File path: assets/images/ic_mall.svg
   SvgGenImage get icMall => const SvgGenImage('assets/images/ic_mall.svg');
 
@@ -72,6 +85,10 @@ class $AssetsImagesGen {
   SvgGenImage get icMenuCircle =>
       const SvgGenImage('assets/images/ic_menu_circle.svg');
 
+  /// File path: assets/images/ic_message.png
+  AssetGenImage get icMessage =>
+      const AssetGenImage('assets/images/ic_message.png');
+
   /// File path: assets/images/ic_notification.svg
   SvgGenImage get icNotification =>
       const SvgGenImage('assets/images/ic_notification.svg');
@@ -79,6 +96,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/ic_notification_fill.svg
   SvgGenImage get icNotificationFill =>
       const SvgGenImage('assets/images/ic_notification_fill.svg');
+
+  /// File path: assets/images/ic_person.svg
+  SvgGenImage get icPerson => const SvgGenImage('assets/images/ic_person.svg');
 
   /// File path: assets/images/ic_personal.svg
   SvgGenImage get icPersonal =>
@@ -91,6 +111,13 @@ class $AssetsImagesGen {
   /// File path: assets/images/ic_price.svg
   SvgGenImage get icPrice => const SvgGenImage('assets/images/ic_price.svg');
 
+  /// File path: assets/images/ic_rating.svg
+  SvgGenImage get icRating => const SvgGenImage('assets/images/ic_rating.svg');
+
+  /// File path: assets/images/ic_recharge_card_service.svg
+  SvgGenImage get icRechargeCardService =>
+      const SvgGenImage('assets/images/ic_recharge_card_service.svg');
+
   /// File path: assets/images/ic_reward.svg
   SvgGenImage get icReward => const SvgGenImage('assets/images/ic_reward.svg');
 
@@ -100,15 +127,35 @@ class $AssetsImagesGen {
   /// File path: assets/images/ic_search.svg
   SvgGenImage get icSearch => const SvgGenImage('assets/images/ic_search.svg');
 
+  /// File path: assets/images/ic_setting.svg
+  SvgGenImage get icSetting =>
+      const SvgGenImage('assets/images/ic_setting.svg');
+
   /// File path: assets/images/ic_shopping_shopee.png
   AssetGenImage get icShoppingShopee =>
       const AssetGenImage('assets/images/ic_shopping_shopee.png');
+
+  /// File path: assets/images/ic_tv_live.svg
+  SvgGenImage get icTvLive => const SvgGenImage('assets/images/ic_tv_live.svg');
+
+  /// File path: assets/images/ic_wait_confirmation.svg
+  SvgGenImage get icWaitConfirmation =>
+      const SvgGenImage('assets/images/ic_wait_confirmation.svg');
+
+  /// File path: assets/images/ic_wait_delivery.svg
+  SvgGenImage get icWaitDelivery =>
+      const SvgGenImage('assets/images/ic_wait_delivery.svg');
+
+  /// File path: assets/images/ic_wait_goods.svg
+  SvgGenImage get icWaitGoods =>
+      const SvgGenImage('assets/images/ic_wait_goods.svg');
 
   /// File path: assets/images/ic_wallet.svg
   SvgGenImage get icWallet => const SvgGenImage('assets/images/ic_wallet.svg');
 
   /// List of all assets
   List<dynamic> get values => [
+        icBox,
         icCamera,
         icCart,
         icChat,
@@ -122,26 +169,47 @@ class $AssetsImagesGen {
         icLiveStream,
         icLiveStreamFill,
         icLocation,
+        icLock,
         icMall,
         icMallFill,
         icMenuCircle,
+        icMessage,
         icNotification,
         icNotificationFill,
+        icPerson,
         icPersonal,
         icPersonalFill,
         icPrice,
+        icRating,
+        icRechargeCardService,
         icReward,
         icScan,
         icSearch,
+        icSetting,
         icShoppingShopee,
+        icTvLive,
+        icWaitConfirmation,
+        icWaitDelivery,
+        icWaitGoods,
         icWallet
       ];
+}
+
+class $ResourcesLangsGen {
+  const $ResourcesLangsGen();
+
+  /// File path: resources/langs/en.json
+  String get en => 'resources/langs/en.json';
+
+  /// List of all assets
+  List<String> get values => [en];
 }
 
 class Assets {
   const Assets._();
 
   static const $AssetsImagesGen images = $AssetsImagesGen();
+  static const $ResourcesGen resources = $ResourcesGen();
 }
 
 class AssetGenImage {

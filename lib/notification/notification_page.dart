@@ -19,7 +19,7 @@ class _NotificationPageState extends ConsumerState<NotificationPage> {
   @override
   Widget build(BuildContext context) {
     return ColoredBox(
-      color: Colors.grey.shade200,
+      color: ColorName.backgroundCommon,
       child: Column(
         children: [
           Container(
@@ -29,7 +29,7 @@ class _NotificationPageState extends ConsumerState<NotificationPage> {
                 BoxShadow(
                   color: Colors.grey.shade400,
                   blurRadius: 5,
-                  offset: const Offset(0, 2),
+                  offset: const Offset(0, 1),
                 ),
               ],
             ),
